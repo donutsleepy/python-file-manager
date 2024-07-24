@@ -62,8 +62,8 @@ def select_folder(inital_dir):
 def main():
     try:
         # Select the folder to be sorted
-        # Replace path with the path of the folder you want
-        path = select_folder(r"C:\Users\katze\Downloads")
+        # Replace default path with the path of the folder you want, for example "C\Users\UserName\Downloads".
+        path = select_folder(r"C:\Users\User\Downloads")
         print(f'Path: {path}')
         for (path, dirs, files) in os.walk(path):
             for file in files:
